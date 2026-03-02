@@ -2517,12 +2517,12 @@ document.querySelectorAll('section:not(#hero)').forEach(s => io.observe(s));
 
 // ─── NODE TYPE DEMO ────────────────────────────────────────────
 const nodeTypeInfo = {
-  1: { name: 'ELEMENT_NODE', desc: 'Represents HTML elements like <div>, <p>, <span>. nodeValue = null. Has children, attributes, classList, style. Most common type.', color: '#82aaff' },
+  1: { name: 'ELEMENT_NODE', desc: 'Represents HTML elements like &lt;div&gt;, &lt;p&gt;, &lt;span&gt;. nodeValue = null. Has children, attributes, classList, style. Most common type.', color: '#82aaff' },
   2: { name: 'ATTRIBUTE_NODE', desc: 'Represents an attribute of an element. Mostly accessed through element.getAttribute() nowadays. nodeValue = the attribute value.', color: '#ffcb6b' },
-  3: { name: 'TEXT_NODE', desc: 'Text content inside elements. The "Hello" in <p>Hello</p>. nodeValue = the actual text string. No children.', color: '#c3e88d' },
-  8: { name: 'COMMENT_NODE', desc: 'HTML comment: <!-- like this -->. Ignored by browser rendering but exists in DOM. Accessible via childNodes.', color: '#546e7a' },
+  3: { name: 'TEXT_NODE', desc: 'Text content inside elements. The "Hello" in &lt;p&gt;Hello&lt;/p&gt;. nodeValue = the actual text string. No children.', color: '#c3e88d' },
+  8: { name: 'COMMENT_NODE', desc: 'HTML comment: &lt;!-- like this --&gt;. Ignored by browser rendering but exists in DOM. Accessible via childNodes.', color: '#546e7a' },
   9: { name: 'DOCUMENT_NODE', desc: 'The document object itself — the root of the entire DOM tree. Only one per page. Entry point for all DOM queries.', color: '#c792ea' },
-  10: { name: 'DOCUMENT_TYPE_NODE', desc: 'The <!DOCTYPE html> declaration. Accessible via document.doctype. nodeType = 10.', color: '#f59e6b' }
+  10: { name: 'DOCUMENT_TYPE_NODE', desc: 'The &lt;!DOCTYPE html&gt; declaration. Accessible via document.doctype. nodeType = 10.', color: '#f59e6b' }
 };
 
 function showNodeType(type) {
